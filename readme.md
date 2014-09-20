@@ -1,3 +1,5 @@
+![superstar](http://www.mumbaiishtyle.com/wp-content/uploads/2010/10/rajinikanth.jpg)
+
 # Superstar: FRP Actors in JS
 
 Superstar is a quick PoC implementation  of the actor pattern from Functional-Reactive Programming. It is built over Flux by Facebook, which is by itself, only a few lines of code. It works well on the browser as well as on nodejs. 
