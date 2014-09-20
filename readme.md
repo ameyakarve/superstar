@@ -130,7 +130,7 @@ var action = function(payload, data) {
 
 To use actors, we need an actor system. In the system, we can register the actors and kick off the flow. 
 
-```
+```javascript
 
 var ActorSystem = require("./ActorSystem");
 var Auction = require("./generated/auction");
