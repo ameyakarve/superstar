@@ -36,6 +36,7 @@ The logger can listen to a message and prints out the sender and the message tex
 Assuming this is a blind auction, the buyer only needs to know if he is winning or not. Thus, the state variable consists of only one boolean initialized to false. 
 
 The bidder may
+
 1. Make an enquiry to the auction, and receive the status
 1. Make a bid and receive the status (if the bid succeeds, or if it fails and what is the current maximum bid)
 1. Get notified if he got outbid
@@ -66,11 +67,13 @@ if(payload.value.status === "FINISHED") {
 ### Auction/seller
 
 This is the most important piece of our example. The state of an auction includes:
+
 1. isActive: Boolean initialized to false
 1. Value of minimum bid
 1. Current maximum bid and the corresponding bidder
 
 The actions that need to be performed by the auction include
+
 1. Start and end the auction. If the auction is over, notify the winner. 
 1. Respond to enquiries
 1. Respond to bids. If the bid is valid, then notify the previous highest bidder where applicable.
